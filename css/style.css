@@ -40,6 +40,7 @@ footer{
 .fondo{
   background-image: url(../multimedia/img/logos/fondo.jpg);
   height: 300px;
+  flex-direction: column;
 }
 .title{
     color: rgba(61, 58, 66, 0.881);
@@ -91,6 +92,21 @@ transition: 0.9s;
 .imagen2:hover{
   width:320px;
   height: 380px;
+}
+.imagenbuscada{
+  width: 120px;
+  height: 150px;
+  border-radius: 10px;
+  border: solid gray;
+  margin-top: 10px;
+}
+.imagenp{
+  width: 260px;
+  height: 290px;
+  border:solid 2px;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 .subtitulo{
       color: rgba(0, 0, 0, 0.805);
@@ -261,6 +277,60 @@ top: 30px;
   color: rgb(195, 217, 215);
   transition: 0.5s;
 }
+.busquedas{
+  margin: 30px;
+}
+.beneficios{
+  margin-bottom: 24px;
+}
+.botonb{
+  width: 100px;
+  padding: 3px;
+  background-color: rgb(0, 0, 0);
+  color: bisque;
+  border-radius: 5px;
+  border: solid gray;
+}
+.subtituloind{
+  color: rgb(228, 228, 210);
+  display: flex;
+  margin: 10px;
+}
+.subsubtituloind{
+  color: rgb(228, 228, 210);
+  display: flex;
+  
+}
+.listas{
+  list-style: none;
+}
+.containerinfo{
+max-width: 800px;
+margin: 0 auto;
+
+}
+.imagen2{
+  width: 140px;
+  height: 180px;
+  
+}
+.subtituloind{
+  font-size: 33px;
+  
+}
+.subsubtituloind{
+  font-size: 28px;
+}
+.talles{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.productos{
+ display: flex;
+ 
+}
+
 @media(max-width:600px){
   .sucursales__lista li a{
     font-size: 11px; 
@@ -268,6 +338,12 @@ top: 30px;
   }
   .sucursales__lista{
     justify-content: start;
+  }
+  .subtituloind{
+    font-size: 23px;
+  }
+  .subsubtituloind{
+    font-size: 19px;
   }
 }
 .sucursales__lista li a:hover{
@@ -279,9 +355,10 @@ top: 30px;
   .sucursales__lista{
     justify-content: left;
   }
+  .info{
+    font-size: 13px;
+  }
 }
-
-
 
 @media(max-width:980px){
   .imagen{
@@ -289,12 +366,6 @@ top: 30px;
     height: 260px;
     margin: 15px;
   }
-  .subtitulo1{
-    font-size: 16px;
-  }
-  .subsubtitulo{
-    font-size: 15px;
-    }
   .logo{
     width: 50px;
   }
@@ -308,12 +379,6 @@ top: 30px;
       height: 210px;
       margin: 12px;
     }
-    .subtitulo1{
-      font-size: 14px;
-    }
-    .subsubtitulo{
-      font-size: 13px;
-      }
     .logo{
       width: 40px;
     }
@@ -330,42 +395,19 @@ top: 30px;
     }
   }
 
-  @media(max-width:430px){
+  @media(max-width:470px){
     .imagen{
       width: 120px;
-      height: 150px;
+      height: 150px; 
     }
-    .subtitulo1{
-      font-size: 12px;
     }
-    .subsubtitulo{
-      font-size: 11px;
-      }
-    .title{
-      font-size: 18px;
-    }
-    .parrafo{
-      font-size: 9px;
-    }
-    .imagen2{
-      width: 140px;
-      height: 180px;
-    }
-  }
-
+ 
+  
   @media(max-width:390px){
     .imagen{
-      width: 110px;
-      height: 150px;
-    }
-    .subtitulo1{
-      font-size: 12px;
-    }
-    .subsubtitulo{
-      font-size: 10px;
-      }
-    .logo{
-      width: 25px;
+      width: 200px;
+      object-fit: cover;
+      height: 220px;
     }
     .title{
       font-size: 18px;
@@ -376,6 +418,18 @@ top: 30px;
     .imagen2{
       width: 110px;
       height: 150px;
+    }
+    .contenedorimagen{
+      flex-direction: column;
+      align-items: center;
+    }
+    .subsubtitulo{
+      display: flex;
+      justify-content: center;
+    }
+    .containerinfo{
+      margin-left: 8px;
+      margin-right: 8px;
     }
   }
 
