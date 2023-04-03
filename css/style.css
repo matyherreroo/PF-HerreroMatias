@@ -279,6 +279,9 @@ top: 30px;
 }
 .busquedas{
   margin: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .beneficios{
   margin-bottom: 24px;
@@ -328,6 +331,8 @@ align-items: center;
 }
 .productos{
  display: flex;
+ align-items: center;
+ justify-content: center;
  
 }
 
@@ -360,7 +365,7 @@ align-items: center;
   }
 }
 
-@media(max-width:980px){
+@media(max-width:991px){
   .imagen{
     width: 220px;
     height: 260px;
@@ -371,6 +376,10 @@ align-items: center;
   }
   .parrafo{
     font-size: 12px;
+  }
+  .contenedorproductos{
+  
+
   }
   }
   @media(max-width:752px){
@@ -394,16 +403,8 @@ align-items: center;
 
     }
   }
-
-  @media(max-width:470px){
-    .imagen{
-      width: 120px;
-      height: 150px; 
-    }
-    }
  
-  
-  @media(max-width:390px){
+  @media(max-width:575px){
     .imagen{
       width: 200px;
       object-fit: cover;
@@ -430,6 +431,19 @@ align-items: center;
     .containerinfo{
       margin-left: 8px;
       margin-right: 8px;
+    }
+    .contenedorproductos{
+      display: flex;
+      align-items: center;
+    }
+    .contenedorproductos{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .imagenp{
+      display: flex;
+      justify-content: center;
     }
   }
 
