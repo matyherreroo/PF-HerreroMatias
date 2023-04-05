@@ -1,0 +1,87 @@
+.cuerpo{
+    color: rgb(34, 35, 36);
+}
+.main{
+    font-weight: 600;
+    color: rgba(18, 17, 19, 0.881);
+    margin: 10px;
+}
+.Preguntas{
+ color: rgb(0, 0, 0);
+ background-color: rgb(108, 100, 100);
+ width: 300px;
+ height: 300px;
+ overflow: scroll;
+ margin: auto;
+ padding: 10px;
+ border: solid;
+}
+.parrafo{
+font-size: 14px;
+top: 30px;
+}
+.listas{
+    list-style: none;
+  }
+  .containerinfo{
+  max-width: 800px;
+  margin: 0 auto;
+  }
+  .busquedas{
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .beneficios{
+    margin-bottom: 24px;
+  }
+  .lista{
+    a{
+        text-decoration: none;;
+        font-weight: 800;
+    }
+}
+.lista{
+    color: black;
+    margin: 0;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 20px;
+}
+.navbar{
+    width: 100%;
+    margin-top: 0;
+    z-index: 1;
+  }
+  .navbar-expand-lg .navbar-dark .bg-dark .position-fixed{
+    margin-bottom: 40px;
+  }
+  .row,.container,.container-fluid{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    font-family: 'Lato', sans-serif; 
+  }
+  header{
+    font-family: 'Lato', sans-serif; 
+    
+  }
+  main{
+    font-family: 'Lato', sans-serif; 
+  }
+  footer{
+    font-family: 'Lato', sans-serif;  
+  }
+  .menu{
+      color: rgba(0, 255, 221, 0.608);
+  }
+  
+  .fondo{
+    background-image: url(../multimedia/img/logos/fondo.jpg);
+    height: 300px;
+    flex-direction: column;
+  }
