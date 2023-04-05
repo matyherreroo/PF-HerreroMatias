@@ -1,0 +1,108 @@
+.imagen{
+    width: 300px;
+    height: 350px;
+    border:solid 2px;
+    margin: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+.imagen{
+    img{
+        width: 300px;
+        height: 350px;
+        transition: 0.9s;
+        }
+}
+  .imagen img:hover{
+    width: 320px;
+    transform: scale(1.2);
+    z-index: 100;
+  }
+  
+.contenedorimagen{
+    display: flex;
+   justify-content: center;
+}
+
+.imagen2{
+    width:300px;
+    height: 350px;
+    border-radius: 10px;
+    border: solid;
+}
+.imagen2:hover{
+  width:320px;
+  height: 380px;
+}
+.imagenbuscada{
+  width: 120px;
+  height: 150px;
+  border-radius: 10px;
+  border: solid gray;
+  margin-top: 10px;
+}
+.imagenp{
+  width: 260px;
+  height: 290px;
+  border:solid 2px;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  }
+.contenedorimagen{
+  ul li{
+      display: flex;
+      justify-content: space-between;
+    }
+}
+.sub-container{
+  .subsubtitulo{
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+    }
+}
+.contenedorimagen3{
+  ul{
+      display: flex;
+      list-style: none;
+      margin: 50px;
+    }
+}
+.imagen3{
+width: 200px;
+height: 150px;  
+margin-left: 70px;
+transition: 1.5s;
+}
+.imagen3:hover{
+width: 250px;
+height: 200px;
+}
+.imagen2{
+  width: 140px;
+  height: 180px; 
+}
+.talles{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+.productos{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+  }
+  .contenedorimagen3 {
+    display: flex;
+    justify-content: space-around; 
+  } 
+  .logo{
+    width: 60px;
+    overflow: contain;
+    border: 5px solid;
+    align-items: start;
+  }
+

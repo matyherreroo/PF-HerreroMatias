@@ -1,0 +1,31 @@
+.comprar{
+    display: flex;
+    justify-content: space-around;
+}
+.comprar{
+      .boton{
+          display: flex;
+          color: black;
+          background-color: beige;
+          transition: 0.5s;
+          padding: 10px;
+        }
+}
+.comprar .boton:hover{
+    background-color: rgb(140, 164, 227);
+}
+.botonb{
+    width: 100px;
+    padding: 3px;
+    background-color: rgb(0, 0, 0);
+    color: bisque;
+    border-radius: 5px;
+    border: solid gray;
+}
+.boton{
+    color: rgba(12, 80, 175, 0.704);
+    font-weight: 800;
+    text-decoration:none;
+    margin: 15px 10px 20px;
+    display: block;
+}  
