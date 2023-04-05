@@ -577,6 +577,9 @@ footer {
   .info {
     font-size: 13px;
   }
+  .productoimg{
+  width: 300px;
+  height: 330px;}
 }
 @media (max-width: 991px) {
   .imagen {
@@ -653,5 +656,180 @@ footer {
     justify-content: center;
   }
 }
+.contenedorpago{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.contenedortexto{
+  max-width: 1000px;
+}
+.productoimg{
+  width: 430px;
+  height: 460px;
+  border-radius: 25px;
+  border: solid black 4px;
+  text-decoration: none;
+  margin-top: 35px;
+}
+.contenedorproducto{
+  margin-top: 30px;
+  display: flex;
+  justify-content: left;
+}
+.textob{
+  display: block;
+
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.productoimg {
+  width: 400px;
+  height: 430px;
+  object-fit: cover;
+  margin-bottom: 10px;
+
+}
+
+.product h2 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.product p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.product .price {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+
+
+}
+.descripcion{
+  max-width: 410px;
+  font-weight: 600;
+  color: rgba(18, 17, 19, 0.881);
+  margin: 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.metodos-de-pago {
+  display: flex;
+}
+
+.metodopago {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  float: right;
+}
+
+.payment-method input[type="radio"] {
+  margin-right: 10px;
+}
+
+.metodopago img {
+  display: flex;
+  float: right;
+  width: 100px;
+  height: 70px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+.contenedoritem{
+  display: flex;
+  
+}
+.item{
+  display: flex;
+  justify-content: flex-start;
+}
+.tallesbuzo{
+margin-top: 35px;
+margin-left: 20px;
+display: flex;
+flex-direction: column;
+}
+.tallesbuzo img{
+  width: 300px;
+  height: 320px;
+  border-radius: 20px;
+  border: solid 2px black;
+}
+.contenedorform{
+  display: flex;
+}
+.contenedordescripcion{
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+  margin-top: 35px;
+}
+.descripcion2{
+  margin-left: 70px;
+  max-width: 410px;
+  font-weight: 600;
+  color: rgba(18, 17, 19, 0.881);
+}
+@media(max-width:390px){
+  .item img{
+    width: 300px;
+    height: 330px;
+  }
+
+}
+@media(max-width:500px){
+.metodos-de-pago{
+  flex-direction: column;
+  align-items: center;
+}
+
+
+}
+@media(max-width:800px){
+  .contenedoritem{
+    flex-direction: column;
+    align-items: center;
+  }
+  .contenedorform{
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+}
+@media(max-width:980px){
+  .productoimg{
+    width: 340px;
+    height: 370px;
+  }
+  .tallesbuzo img{
+    width: 240px;
+    height: 270px;
+  }
+  .tallesbuzo{
+    margin-left: 20px;
+  }
+.contenedorform{
+  flex-direction: column;
+  align-items: center;
+}
+.descripcion{
+  max-width: 500px;
+}
+}
+
+
 
 /*# sourceMappingURL=style.css.map */
