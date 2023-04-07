@@ -8,10 +8,51 @@
   overflow: hidden;
 }
 
-.imagen img {
+.imagen{
   width: 300px;
   height: 350px;
-  transition: 0.9s;
+  transition: 0.3s;
+-webkit-animation: scale-in-ver-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: scale-in-ver-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }  
+ @-webkit-keyframes scale-in-ver-top {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+    opacity: 1;
+  }
+}
+@keyframes scale-in-ver-top {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+    opacity: 1;
+  }
+}
+
+
+.imagen:hover{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    transform: scale(1.2);
+  
 }
 
 .imagen img:hover {
@@ -32,11 +73,6 @@
   border: solid;
 }
 
-.imagen2:hover {
-  width: 320px;
-  height: 380px;
-}
-
 .imagenbuscada {
   width: 120px;
   height: 150px;
@@ -52,7 +88,9 @@
   margin: 20px;
   border-radius: 10px;
   overflow: hidden;
-}
+  transition: .3s;
+
+  }
 
 .contenedorimagen ul li {
   display: flex;
@@ -480,18 +518,6 @@
   justify-content: space-around;
 }
 
-.comprar .boton {
-  display: flex;
-  color: black;
-  background-color: beige;
-  transition: 0.5s;
-  padding: 10px;
-}
-
-.comprar .boton:hover {
-  background-color: rgb(140, 164, 227);
-}
-
 .botonb {
   width: 100px;
   padding: 3px;
@@ -670,7 +696,36 @@ footer {
   border: solid black 4px;
   text-decoration: none;
   margin-top: 35px;
+ -webkit-animation: slide-in-bck-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-bck-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+
+@-webkit-keyframes slide-in-bck-center {
+  0% {
+    -webkit-transform: translateZ(600px);
+            transform: translateZ(600px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
 }
+@keyframes slide-in-bck-center {
+  0% {
+    -webkit-transform: translateZ(600px);
+            transform: translateZ(600px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+ 
+
 .contenedorproducto{
   margin-top: 30px;
   display: flex;
@@ -692,6 +747,7 @@ footer {
   height: 430px;
   object-fit: cover;
   margin-bottom: 10px;
+  
 
 }
 
@@ -785,6 +841,58 @@ flex-direction: column;
 .enlace{
   color: black;
 }
+.imagenp:hover{
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+.cardcontainer{
+  display: flex;
+  justify-content: center;
+}
+.card {
+  display: inline-block;
+  width: 400px;
+  height: 350px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  margin: 10px;
+  padding: 10px;
+  justify-content: center;
+  border: solid rgb(38, 35, 35) 4px;
+  background-color: #000000;
+background-image: linear-gradient(160deg, #494f51 0%, #7a817f 100%);
+transition: .3s;
+
+}
+.card:hover{
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  background-image: linear-gradient(160deg, #7a7d7d 0%, #919393 100%);
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 190px;
+  height: 150px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.card h3 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.card p {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
 @media(max-width:390px){
   .item img{
     width: 300px;
@@ -796,6 +904,14 @@ flex-direction: column;
 .metodos-de-pago{
   flex-direction: column;
   align-items: center;
+}
+.cardcontainer{
+  flex-direction: column;
+  align-items: center;
+}
+.card{
+  width: 250px;
+  height: 250px;
 }
 
 
