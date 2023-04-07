@@ -925,8 +925,17 @@ transition: .3s;
     flex-direction: column;
     align-items: center;
   }
+  .card{
+    height: fit-content;
+  }
 
 
+}
+@media(max-width:690px){
+  .cardcontainer{
+    flex-direction: column;
+    align-items: center;
+  }
 }
 @media(max-width:980px){
   .productoimg{
@@ -947,7 +956,11 @@ transition: .3s;
 .descripcion{
   max-width: 500px;
 }
+.card{
+  height: fit-content;
 }
+}
+
 
 
 
