@@ -892,15 +892,14 @@ transition: .3s;
   line-height: 1.5;
 }
 
-
-@media(max-width:390px){
+@media(max-width:391px){
   .item img{
     width: 300px;
     height: 330px;
   }
 
 }
-@media(max-width:500px){
+@media(max-width:502px){
 .metodos-de-pago{
   flex-direction: column;
   align-items: center;
@@ -916,7 +915,7 @@ transition: .3s;
 
 
 }
-@media(max-width:800px){
+@media(max-width:801px){
   .contenedoritem{
     flex-direction: column;
     align-items: center;
@@ -931,7 +930,7 @@ transition: .3s;
 
 
 }
-@media(max-width:690px){
+@media(max-width:691px){
   .cardcontainer{
     flex-direction: column;
     align-items: center;
@@ -960,6 +959,7 @@ transition: .3s;
   height: fit-content;
 }
 }
+
 
 
 
