@@ -7,6 +7,7 @@
 @import "texto";
 @import "botons";
 
+$bg-color:rgb(154, 154, 155);
 
 *{
   margin: 0;
@@ -15,7 +16,7 @@
 }
 
 .bg{
-  background-color: rgb(154, 154, 155);
+  background-color: $bg-color;
 }
 .contenedorpago{
   max-width: 1000px;
@@ -265,6 +266,10 @@ transition: .3s;
 .card{
   width: 250px;
   height: 250px;
+}
+.sucursales__lista{
+  display: flex;
+  flex-direction: column;
 }
 
 
