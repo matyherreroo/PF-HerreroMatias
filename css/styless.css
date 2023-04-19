@@ -370,7 +370,9 @@ align-items: center;
     justify-content: left;
   }
   .info{
-    font-size: 13px;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
@@ -517,9 +519,8 @@ align-items: center;
     height: 430px;
     object-fit: cover;
     margin-bottom: 10px;
-    
-  
   }
+  
   
   .product h2 {
     font-size: 24px;
